@@ -1,10 +1,13 @@
 .navigator {
   height: 100px;
   width: 100%;
-  /*bg and font to TBD*/
   position: fixed;
+  left: 0;
+  right: 0;
   text-align: center;
   z-index: 999;
+  background-color: #D1CAC3;
+  border-color: #D1CAC3;
 }
 
 .navigator a {
@@ -13,49 +16,96 @@
   top: 35px;
   position: relative;
   text-align: left;
+  /*color: #6C6967;*/
+  font-family: 'Poiret One', serif;
+  font-size: 150%;
   /*font etc TBD*/
 }
 
 .intro {
   position: relative;
-  color: #FFF;
+  /*color: #6C6967;*/
   padding-top: 30%;
+  font-family: 'Josefin Slab',serif;
+  font-size: 300%;
+}
+
+h2, h5, section, form, .intro, .navigator a, .social, .about{
+  color: #6C6967;
+}
+
+.button {
+  background-color: #8CC3C8; /*#DD9998;#FF7A81; #7BCBCA;*/
+  font-family: 'Poiret One', serif;
+  font-size: 150%;
+}
+
+p, form {
+  font-family: 'Exo', serif;
+  font-size: 110%;
+  font-weight: 300;
+  text-align: center;
 }
 
 .social {
   position: relative;
-  color: #FFF;
+  /*color: #6C6967;*/
   padding-top: 5%;
 }
 
 .about {
-  color: #000;
+  /*color: #6C6967;*/
   text-align: center;
 }
 
-div {
-  /*height: 100px;*/
-  border-style: dashed; /*for reference - remove later*/
+/*div {
+  border-style: dashed;
   border-width: 1px;
   border-color: #000;
-  /*padding:40px;*/
 }
-
 section {
-  border-style: dashed; /*for reference - remove later*/
+  border-style: dashed;
   border-width: 1px;
   border-color: #FF0000;
-}
+}*/
 
 .portfolio img {
   padding-top: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
   /*opacity: 0.4;
   filter: alpha(opacity=40);*/ /*use this on mouse over*/
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+}
+/*
+.form_fields {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}*/
+
+input {
+  height: 60px;
+}
+
+textarea, input {
+  width: 100%;
+  max-width: 600px;
+  border-bottom: 1px dashed #6C6967;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 10px;
 }
 
 #page1 {
@@ -89,7 +139,7 @@ section {
   /*height:400px;*/
   position: relative;
   padding: 0px 50px 30px 50px;
-  text-align:center;
+  /*text-align:center;*/
   /*background: url(' http://www.mrwallpaper.com/wallpapers/bokeh-transparent-leave-1680x1050.jpg') no-repeat fixed;
   background-size: cover;*/
 }
