@@ -16,9 +16,14 @@
   top: 35px;
   position: relative;
   text-align: left;
+  text-decoration: none;
   /*color: #6C6967;*/
   font-family: 'Poiret One', serif;
   font-size: 150%;
+  /*transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-delay: initial;*/
   /*font etc TBD*/
 }
 
@@ -30,14 +35,20 @@
   font-size: 300%;
 }
 
+.list-inline a:visited{
+  color: #6C6967;
+}
+
 h2, h5, section, form, .intro, .navigator a, .social, .about{
   color: #6C6967;
 }
 
 .button {
   background-color: #8CC3C8; /*#DD9998;#FF7A81; #7BCBCA;*/
+  border-color: #8CC3C8;
   font-family: 'Poiret One', serif;
   font-size: 150%;
+  color: #6C6967;
 }
 
 p, form {
@@ -98,7 +109,21 @@ input {
   height: 60px;
 }
 
-textarea, input {
+.navigator-wrapper {
+  padding: 40px 0 0 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 9000;
+}
+
+#menu_overlay{
+  float: right;
+  margin-right: 35px;
+  margin-top: -35px;
+}
+
+textarea, #email, #name, #message {
   width: 100%;
   max-width: 600px;
   border-bottom: 1px dashed #6C6967;
@@ -108,38 +133,26 @@ textarea, input {
   padding: 10px;
 }
 
+#submitbutton {
+  background-color: #8CC3C8;
+  padding: 10px 20px 10px 20px;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  border: none;
+}
+
 #page1 {
   text-align: center;
   height: 855px;
-  position: relative;
-  padding: 0px 50px 30px 50px;
   background: url('images/Main.jpg') no-repeat fixed;
   background-size: cover;
 }
 
-#page2 {
+#page1, #page2, #page3, #page4 {
   /*height: 700px;
   padding: 50px;*/
   position: relative;
   padding: 0px 50px 30px 50px;
   /*background: url('http://images.forwallpaper.com/files/images/0/0152/01528da4/168239/bokeh-texture.jpg') no-repeat fixed;
    background-size: cover;*/
-}
-
-#page3{
-  /*height: 1000px;
-  padding: 110px 50px 50px 50px;*/
-  position: relative;
-  padding: 0px 50px 30px 50px;
-  /*background: url('http://7-themes.com/data_images/out/19/6833393-bokeh-background.jpg') no-repeat fixed;
-   background-size: cover;*/
-}
-
-#page4 {
-  /*height:400px;*/
-  position: relative;
-  padding: 0px 50px 30px 50px;
-  /*text-align:center;*/
-  /*background: url(' http://www.mrwallpaper.com/wallpapers/bokeh-transparent-leave-1680x1050.jpg') no-repeat fixed;
-  background-size: cover;*/
 }

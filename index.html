@@ -14,21 +14,43 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="animatescroll.js"></script>
+  <script src="script.js"></script>
 </head>
 <!--start of body-->
 <body>
   <div class = "container-fluid">
+    <!--NAVIGATION-->
     <nav class="navbar navbar-default navigator">
       <div class="row">
         <div class="col-xs-5"><a href="#">Add logo here</a></div> <!--play around with grid-->
-        <div class="col-xs-7">
+        <div class="col-xs-7 visible-lg">
           <a href="#" onclick="$('#home').animatescroll();">Home</a>
           <a href="#" onclick="$('#about').animatescroll();">About</a>
           <a href="#" onclick="$('#portfolio').animatescroll();">Portfolio</a>
           <a href="#" onclick="$('#contact').animatescroll();">Contact</a>
         </div>
       </div>
+      <a href id="menu_overlay" class="hidden-lg">
+        <i class="fa fa-bars fa-2x"></i>
+      </a>
     </nav>
+    <div class="navigator-wrapper" style="display:none;">
+      <a href="#" class=""><i class="fa fa-times fa-2x"></i></a>
+      <ul>
+        <li>
+          <a href="#" onclick="$('#home').animatescroll();">Home</a>
+        </li>
+        <li>
+          <a href="#" onclick="$('#about').animatescroll();">About</a>
+        </li>
+        <li>
+          <a href="#" onclick="$('#portfolio').animatescroll();">Portfolio</a>
+        </li>
+        <li>
+          <a href="#" onclick="$('#contact').animatescroll();">Contact</a>
+        </li>
+      </ul>
+    </div>
     <!--Home section-->
     <a id="home"></a>
     <div id = "page1">
@@ -42,11 +64,11 @@
           <!--</div>-->
           <div class="social">
             <ul class="list-inline">
-              <li><a href="https://github.com/p1nx" class="btn btn-default btn-lg button"><i class="fa fa-github fa-fw"></i>Github</a></li>
-              <li><a href="https://in.linkedin.com/pub/pinky-borah/58/144/834" class="btn btn-default btn-lg button"><i class="fa fa-linkedin fa-fw"></i>LinkedIn</a></li>
-              <li><a href="https://twitter.com/PinxBorah" class="btn btn-default btn-lg button"><i class="fa fa-twitter fa-fw"></i>Twitter</a></li>
-              <li><a href="https://www.facebook.com/pinky.borah.7" class="btn btn-default btn-lg button"><i class="fa fa-facebook-official fa-fw"></i>Facebook</a></li>
-              <li><a href="https://instagram.com/thepixtorial/" class="btn btn-default btn-lg button"><i class="fa fa-instagram fa-fw"></i>Instagram</a></li>
+              <li><a href="https://github.com/p1nx" target="_blank" class="btn btn-primary btn-lg button"><i class="fa fa-github fa-fw"></i>Github</a></li>
+              <li><a href="https://in.linkedin.com/pub/pinky-borah/58/144/834" target="_blank" class="btn btn-primary btn-lg button"><i class="fa fa-linkedin fa-fw"></i>LinkedIn</a></li>
+              <li><a href="https://twitter.com/PinxBorah" target="_blank" class="btn btn-primary btn-lg button"><i class="fa fa-twitter fa-fw"></i>Twitter</a></li>
+              <li><a href="https://www.facebook.com/pinky.borah.7" target="_blank" class="btn btn-primary btn-lg button"><i class="fa fa-facebook-official fa-fw"></i>Facebook</a></li>
+              <li><a href="https://instagram.com/thepixtorial/" target="_blank" class="btn btn-primary btn-lg button"><i class="fa fa-instagram fa-fw"></i>Instagram</a></li>
             </ul>
           </div>
         </div>
@@ -129,27 +151,32 @@
       <div class="container">
         <form>
           <div class="row">
-            <div class="col-sm-12 form_fields">
+            <div class="col-sm-12">
               <input type="text" name="email" id="email" placeholder="Email">
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-12 form_fields">
+            <div class="col-sm-12">
                 <input type="text" name="name" id="name" placeholder="Name">
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-12 form_fields">
+            <div class="col-sm-12">
                 <textarea name="message" id="message" placeholder="Message" cols="40" rows="6"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+                <input type="submit" id="submitbutton" value="Send">
             </div>
           </div>
         </form>
       </div>
       <div>
-        </br></br></br>
+        </br></br>
         <p>This site is created by Pinky Borah. Sites referenced were <a href="http://www.djuradj.net">Djuradj</a> and <a href="http://thiagoferreir4.github.io/">Thiego Ferreira's</a>
         </br>website provided as an example in <a href="http://www.freecodecamp.com/">freecodecamp</a>.</p>
-      </br></br><p>Copyright PinkyPortfolio.me </p></br></br></br>
+        </br></br><p>Copyright PinkyPortfolio.me </p></br></br></br>
       </div>
     </section>
     <!--Main div-->
